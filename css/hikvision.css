@@ -1,0 +1,165 @@
+.hikvision h1{
+    position: relative;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    line-height: 78px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.hikvision p{
+    font-family: 'Century Gothic';
+    font-style: normal;
+}
+
+.hikvision .banner{
+    position: relative;
+    width: 100%;
+    height: 474px;
+    top: 60px;
+    background: #BEBDBD;
+    border-radius: 50px;	
+}
+.hikvision p{
+    margin:0;
+}
+.hikvision .tblock{
+    display: inline-grid;
+    float: right;
+}
+.hikvision .banner-tblock{
+    display: block;
+    position: relative;
+    width: 457px;
+    height: 145px;
+    float: right;
+    top: 52px;
+    right: 20px;
+    background: #DF152D;
+    border-radius: 187px;
+    margin: 20px;
+    }
+.hikvision .banner .p-head{
+    position: relative;
+    width: 493px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+    left: 50px;
+    top: 24px;
+}
+.hikvision .banner p{
+    position: relative;
+    width: 273px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 0;
+    left: 50px;
+    top: 24px;
+}
+.hikvision .img-banner{
+    max-height: 474px;
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.hikvision .head-content p{
+    position: relative;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+}
+.hikvision .head-content .p-head{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 44px;
+}
+.hikvision .head-content{
+    margin-top: 8%;
+}
+.hikvision .red-button{
+    background: #DF152D;
+    border-radius: 187px;	
+    padding:10px 20px;
+    margin: 0px 5px 15px 5px;
+}
+.hikvision .red-button-group{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin: 40px 5px 40px 5px;
+}
+.hikvision .red-divider{
+    width: 70%;
+    background: #DF152D;
+    height: 5px;
+    border: none;
+}
+.hikvision .left-right-blocks .h1{
+    margin: 40px 0px;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    line-height: 78px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.hikvision .left-right-blocks .columns{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 0;
+}
+.hikvision .left-right-blocks .column{
+    width: 50%;
+}
+.hikvision .left-right-blocks .column .cat-image{
+    margin-top: -95px;
+}
+.hikvision .cat-head{
+    color: #DF152D;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+.bigblock .f-color li{color: #000;}
+.hikvision .cat-padding{
+    padding: 40px 0;
+}
+.hikvision .add-app{
+    color: #000;
+    font-size: 20px;
+    padding: 20px 0;
+}
+.hikvision .app-img{
+    display:flex;
+    flex-wrap:wrap;
+}
+.hikvision .app-img img{
+    max-width: 75px;
+    object-fit: contain;
+    margin-left: 25px;
+}
+.cat-padding span{
+    color: #DF152D;
+}
+.hikvision .cat-padding-comment{
+    padding-bottom:40px;
+}
