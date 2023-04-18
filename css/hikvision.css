@@ -18,10 +18,12 @@
     position: relative;
     width: 100%;
     height: 474px;
-    top: 60px;
-    background: #BEBDBD;
     border-radius: 50px;	
 }
+.hikvision .banner.top{
+    top: 60px;
+}
+
 .hikvision p{
     margin:0;
 }
@@ -43,7 +45,8 @@
     }
 .hikvision .banner .p-head{
     position: relative;
-    width: 493px;
+    max-width: 493px;
+    width: -webkit-fill-available;
     font-weight: 700;
     font-size: 26px;
     line-height: 44px;
@@ -122,10 +125,15 @@
     text-transform: uppercase;
     color: #000000;
 }
+.hikvision .left-right-blocks{
+    margin-bottom: 5%;
+}
 .hikvision .left-right-blocks .columns{
     display: flex;
     flex-wrap: wrap;
-    margin: 100px 0;
+}
+.hikvision .left-right-blocks .columns.margin{
+    margin: 60px 0;
 }
 .hikvision .left-right-blocks .column{
     width: 50%;
@@ -135,17 +143,22 @@
 }
 .hikvision .cat-head{
     color: #DF152D;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 700;
     padding: 20px 0;
 }
-.bigblock .f-color li{color: #000;}
+.bigblock .f-color li{
+    color: #000;
+}
+.bigblock .f-color{
+    max-width: 80%;
+}
 .hikvision .cat-padding{
     padding: 40px 0;
 }
 .hikvision .add-app{
     color: #000;
-    font-size: 20px;
+    font-size: 26px;
     padding: 20px 0;
 }
 .hikvision .app-img{
@@ -160,6 +173,116 @@
 .cat-padding span{
     color: #DF152D;
 }
+.cat-padding-comment span{
+    color: #DF152D;
+}
 .hikvision .cat-padding-comment{
     padding-bottom:40px;
 }
+.cat-padding-comment.max-width{
+    max-width:90%;
+}
+.red-button-style-hik{
+	background: #DF152D;
+	border-radius: 187px;
+	width: 75%;
+    display: block;
+    /* height: 60px; */
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+	margin:15px 0;
+}
+.hik-buttons{
+	margin:40px 0;
+}
+.cat-img{
+    display: block;
+    max-width: 65%;
+    margin: 60px 0;
+}
+/*Responsive*/
+@media (max-width: 992px) {
+    .hikvision h1, .hikvision .left-right-blocks .h1 {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+    .hikvision .left-right-blocks .column {
+        width: 100%;
+    }
+    .hikvision .banner-tblock {
+            width: 100%;
+            height: 100%;
+            float: unset;
+            right: unset;
+            border-radius: 25px;
+    }
+    .hikvision .banner-tblock {
+        top: unset;
+    }
+    .hikvision .banner .p-head {
+        font-size: 26px;
+        line-height: 44px;
+        left: unset;
+        padding: 10px;
+    }
+    .hikvision .banner p {
+        width: unset;
+        left: unset;
+        padding: 10px;
+    }
+    .hikvision .banner.top .img-banner {
+        display: none;
+    }
+    .hikvision .banner.top {
+        top: unset;
+    }
+    .hikvision .banner{
+        height: 320px;
+    }
+    .hikvision .head-content .p-head {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .hikvision .left-right-blocks .columns.margin {
+        margin: unset;
+    }
+    .hikvision .cat-padding {
+        padding: unset;
+    }
+    .hikvision .app-img img {
+        max-width: 55px;
+        margin-left: 10px;
+    }
+    .hikvision .left-right-blocks .column .cat-image {
+        margin-top: unset;
+    }
+    .hikvision .add-app {
+        font-size: 20px;
+    }
+    .hikvision .cat-padding-comment {
+        padding-bottom: unset;
+    }
+    .red-button-style-hik {
+        width:100%;
+        font-size: 18px;
+    }
+    .hikvision .cat-head {
+        font-size: 22px;
+    }
+    .cat-img{
+        display: block;
+        max-width: 80%;
+        margin: 60px auto;
+    }
+}
+@media (max-width: 481px){
+    .hikvision .banner{
+        height: 414px;
+    }
+}
+/*Responsive*/
