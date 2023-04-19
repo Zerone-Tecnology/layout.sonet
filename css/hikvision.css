@@ -68,6 +68,13 @@
     top: 24px;
 }
 .hikvision .img-banner{
+    max-height: 1000px;
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.hikvision .banner.top .img-banner{
     max-height: 474px;
     position: absolute;
     width: 100%;
@@ -126,7 +133,10 @@
     color: #000000;
 }
 .hikvision .left-right-blocks{
-    margin-bottom: 5%;
+    margin-bottom: 5%;   
+}
+.hikvision .left-right-blocks.top{
+    margin-top: 25%; 
 }
 .hikvision .left-right-blocks .columns{
     display: flex;
@@ -187,23 +197,42 @@
 	border-radius: 187px;
 	width: 75%;
     display: block;
-    /* height: 60px; */
     text-align: center;
     padding: 20px 10px;
     font-size: 26px;
     font-weight: 700;
     color: white;
     text-transform: uppercase;
-	margin:15px 0;
+    margin: 15px auto;
 }
 .hik-buttons{
-	margin:40px 0;
+	display: block;
+    margin: auto;
+    text-align: center;
 }
 .cat-img{
     display: block;
     max-width: 65%;
-    margin: 60px 0;
+    margin: auto;
 }
+.cat-container{
+    margin: 35px 75px;
+}
+
+/*Animation*/
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+    }
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+/*Animation*/
+
 /*Responsive*/
 @media (max-width: 992px) {
     .hikvision h1, .hikvision .left-right-blocks .h1 {
@@ -219,24 +248,34 @@
             height: 100%;
             float: unset;
             right: unset;
-            border-radius: 25px;
+            border-radius: unset;
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 150px;
+                float: right;
+                top: 52px;
+                right: unset;
+                background: unset;
+                margin: unset;
     }
     .hikvision .banner-tblock {
         top: unset;
     }
     .hikvision .banner .p-head {
-        font-size: 26px;
-        line-height: 44px;
+        font-size: 20px;
+    line-height: 25px;
         left: unset;
-        padding: 10px;
+        padding: 0 50px;
     }
     .hikvision .banner p {
         width: unset;
         left: unset;
-        padding: 10px;
+        padding: 0 50px;
     }
     .hikvision .banner.top .img-banner {
-        display: none;
+        filter: brightness(0.5);
+        height: 300px;
     }
     .hikvision .banner.top {
         top: unset;
@@ -245,7 +284,7 @@
         height: 320px;
     }
     .hikvision .head-content .p-head {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 30px;
     }
     .hikvision .left-right-blocks .columns.margin {
@@ -279,10 +318,18 @@
         max-width: 80%;
         margin: 60px auto;
     }
+    .cat-container {
+        margin: unset;
+    }
+}
+@media (max-width: 480px) {
+    .hikvision .head-content {
+        margin-top: 18%;
+    }
 }
 @media (max-width: 481px){
     .hikvision .banner{
-        height: 414px;
+        height: 255px;
     }
 }
 /*Responsive*/
